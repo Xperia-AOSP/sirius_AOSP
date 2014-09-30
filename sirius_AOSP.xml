@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="github" fetch="git://github.com/" />
+  <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
+  
+  <!-- AOSP removals -->
+  <remove-project name="platform/external/sepolicy" />
+  <remove-project name="platform/external/clang" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/keymaster" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
+  <remove-project name="platform/hardware/qcom/power" />
+  <remove-project name="platform/hardware/ril" />
+
+  <remove-project name="device/asus/deb" />
+  <remove-project name="device/asus/flo" />
+  <remove-project name="device/asus/flo-kernel" />
+  <remove-project name="device/asus/grouper" />
+  <remove-project name="device/asus/tilapia" />
+  <remove-project name="device/lge/hammerhead" />
+  <remove-project name="device/lge/hammerhead-kernel" />
+  <remove-project name="device/lge/mako" />
+  <remove-project name="device/lge/mako-kernel" />
+  <remove-project name="device/samsung/manta" />
+
+
+<!-- AOSP replacements -->
+  
+  <project path="external/clang" name="CyanogenMod/android_external_clang" remote="github" revision="cm-11.0" />
+  <project path="external/sepolicy" name="CyanogenMod/platform_external_sepolicy" remote="github" revision="cm-11.0" />
+  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-11.0" />
+  <project path="frameworks/base" name="CyanogenMod/platform_frameworks_base" remote="github" revision="cm-11.0" />
+  <project path="frameworks/native" name="CyanogenMod/platform_frameworks_native" remote="github" revision="cm-11.0" />
+  <project path="system/core" name="CyanogenMod/platform_system_core" remote="github" revision="cm-11.0" />
+  <project path="hardware/qcom/audio-caf-new" name="CyanogenMod/android_hardware_qcom_audio-caf-new" remote="github" revision="cm-11.0" />
+  <project path="hardware/qcom/display-caf-new" name="CyanogenMod/platform_hardware_qcom_display-caf-new" remote="github" revision="cm-11.0" />
+  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="github" revision="cm-11.0" />
+  <project path="hardware/qcom/media" name="CyanogenMod/platform_hardware_qcom_media" remote="github" revision="cm-11.0" />
+  <project path="hardware/libhardware" name="CyanogenMod/platform_hardware_libhardware" remote="github" revision="cm-11.0" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="caf" revision="kk_2.7_rb1.9" />
+  <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="github" revision="cm-11.0" />
+  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-11.0" />
+ 
+  
+
+  <project name="TheMuppets/proprietary_vendor_sony" path="vendor/sony" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_sony_common" path="device/sony/common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_sony_sirius" path="device/sony/sirius" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_sony_qcom-common" path="device/sony/qcom-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_sony_shinano-common" path="device/sony/shinano-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_kernel_sony_msm8974pro" path="kernel/sony/msm8974pro" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="github" revision="cm-11.0" />
+
+</manifest>
