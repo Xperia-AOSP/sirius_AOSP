@@ -36,11 +36,11 @@
 <!-- AOSP replacements -->
   
   <project path="external/clang" name="CyanogenMod/android_external_clang" remote="github" revision="cm-11.0" />
-  <project path="external/sepolicy" name="CyanogenMod/platform_external_sepolicy" remote="github" revision="cm-11.0" />
+  <project path="external/sepolicy" name="CyanogenMod/android_external_sepolicy" remote="github" revision="cm-11.0" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-11.0" />
-  <project path="frameworks/base" name="CyanogenMod/platform_frameworks_base" remote="github" revision="cm-11.0" />
-  <project path="frameworks/native" name="CyanogenMod/platform_frameworks_native" remote="github" revision="cm-11.0" />
-  <project path="system/core" name="CyanogenMod/platform_system_core" remote="github" revision="cm-11.0" />
+  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" remote="github" revision="cm-11.0" />
+  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="github" revision="cm-11.0" />
+  <project path="system/core" name="CyanogenMod/android_system_core" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/audio-caf-new" name="CyanogenMod/android_hardware_qcom_audio-caf-new" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/display-caf-new" name="CyanogenMod/android_hardware_qcom_display-caf-new" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="github" revision="cm-11.0" />
