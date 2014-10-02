@@ -42,10 +42,10 @@
   <project path="frameworks/native" name="CyanogenMod/platform_frameworks_native" remote="github" revision="cm-11.0" />
   <project path="system/core" name="CyanogenMod/platform_system_core" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/audio-caf-new" name="CyanogenMod/android_hardware_qcom_audio-caf-new" remote="github" revision="cm-11.0" />
-  <project path="hardware/qcom/display-caf-new" name="CyanogenMod/platform_hardware_qcom_display-caf-new" remote="github" revision="cm-11.0" />
+  <project path="hardware/qcom/display-caf-new" name="CyanogenMod/android_hardware_qcom_display-caf-new" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="github" revision="cm-11.0" />
   <project path="hardware/qcom/media-caf-new" name="CyanogenMod/android_hardware_qcom_media-caf-new" remote="github" revision="cm-11.0" />
-  <project path="hardware/libhardware" name="CyanogenMod/platform_hardware_libhardware" remote="github" revision="cm-11.0" />
+  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github" revision="cm-11.0" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="caf" revision="kk_2.7_rb1.9" />
   <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="github" revision="cm-11.0" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-11.0" />
