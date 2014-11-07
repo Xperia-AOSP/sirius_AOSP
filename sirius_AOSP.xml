@@ -1,67 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="github" fetch="git://github.com/" />
-  <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
-  
-  <!-- AOSP removals -->
-  <remove-project name="platform/art" />
-  <remove-project name="platform/external/sepolicy" />
-  <remove-project name="platform/external/clang" />
-  <remove-project name="platform/build" />
-  <remove-project name="platform/frameworks/av" />
-  <remove-project name="platform/frameworks/base" />
-  <remove-project name="platform/frameworks/native" />
-  <remove-project name="platform/hardware/qcom/audio" />
-  <remove-project name="platform/system/core" />
-  <remove-project name="platform/hardware/qcom/camera" />
-  <remove-project name="platform/hardware/qcom/display" />
-  <remove-project name="platform/hardware/qcom/keymaster" />
-  <remove-project name="platform/hardware/qcom/media" />
-  <remove-project name="platform/hardware/libhardware" />
-  <remove-project name="platform/hardware/libhardware_legacy" />
-  <remove-project name="platform/hardware/qcom/power" />
-  <remove-project name="platform/hardware/ril" />
+<remote  name="sony" fetch="git://github.com/sonyxperiadev/" />
+<remote  name="github" fetch="git://github.com/" />
 
-  <remove-project name="device/asus/deb" />
-  <remove-project name="device/asus/flo" />
-  <remove-project name="device/asus/flo-kernel" />
-  <remove-project name="device/asus/grouper" />
-  <remove-project name="device/asus/tilapia" />
-  <remove-project name="device/lge/hammerhead" />
-  <remove-project name="device/lge/hammerhead-kernel" />
-  <remove-project name="device/lge/mako" />
-  <remove-project name="device/lge/mako-kernel" />
-  <remove-project name="device/samsung/manta" />
+<remove-project name="platform/hardware/qcom/keymaster" />
+<remove-project name="platform/hardware/qcom/media" />
+<remove-project name="platform/hardware/qcom/msm8960" />
+<remove-project name="platform/hardware/qcom/sensors" />
+<remove-project name="platform/hardware/invensense" />
+<remove-project name="platform/hardware/akm" /> 
 
-
-<!-- AOSP replacements -->
-
-  <project path="art" name="CyanogenMod/android_art" remote="github" revision="cm-11.0" />
-  <project path="build" name="CyanogenMod/android_build" remote="github" revision="cm-11.0" />  
-  <project path="external/clang" name="CyanogenMod/android_external_clang" remote="github" revision="cm-11.0" />
-  <project path="external/sepolicy" name="CyanogenMod/android_external_sepolicy" remote="github" revision="cm-11.0" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-11.0" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" remote="github" revision="cm-11.0" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" remote="github" revision="cm-11.0" />
-  <project path="system/core" name="CyanogenMod/android_system_core" remote="github" revision="cm-11.0" />
-  <project path="hardware/qcom/audio-caf-new" name="CyanogenMod/android_hardware_qcom_audio-caf" remote="github" revision="cm-11.0" />
-  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf-new" remote="github" revision="cm-11.0" />
-  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="github" revision="cm-11.0" />
-  <project path="hardware/qcom/media-caf-new" name="CyanogenMod/android_hardware_qcom_media-caf-new" remote="github" revision="cm-11.0" />
-  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github" revision="cm-11.0" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="caf" revision="kk_2.7_rb1.9" />
-  <project path="hardware/cm" name="CyanogenMod/android_hardware_cm" remote="github" revision="cm-11.0" />
-  <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="github" revision="cm-11.0" />
- 
-  
-
-  <project name="CyanogenMod/android_vendor_cm" path="vendor/cm" remote="github" revision="cm-11.0" />
-  <project name="TheMuppets/proprietary_vendor_sony" path="vendor/sony" remote="github" revision="cm-11.0" />
-  <project name="CyanogenMod/android_device_sony_common" path="device/sony/common" remote="github" revision="cm-11.0" />
-  <project name="CyanogenMod/android_device_sony_sirius" path="device/sony/sirius" remote="github" revision="cm-11.0" />
-  <project name="CyanogenMod/android_device_sony_qcom-common" path="device/sony/qcom-common" remote="github" revision="cm-11.0" />
-  <project name="CyanogenMod/android_device_sony_shinano-common" path="device/sony/shinano-common" remote="github" revision="cm-11.0" />
-  <project name="CyanogenMod/android_kernel_sony_msm8974pro" path="kernel/sony/msm8974pro" remote="github" revision="cm-11.0" />
-  <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="github" revision="cm-11.0" />
-
+<project path="device/sony/sirius" name="Xperia-AOSP/device-sony-sirius" groups="device" remote="github" revision="5.0" />
+<project path="device/sony/shinano" name="Xperia-AOSP/device-sony-shinano" groups="device" remote="github" revision="5.0" /> 
+<project name="Krabappel2548/vendor-sony" path="vendor/sony" remote="github" revision="lp5.0" />
+<project path="vendor/sony/system/dash" name="DASH" groups="device" remote="sony" revision="master" />
+<project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
+<project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
 </manifest>
